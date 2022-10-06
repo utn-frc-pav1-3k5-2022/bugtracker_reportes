@@ -14,7 +14,7 @@ public class DataManager : IDisposable
     public DataManager()
     {
         dbConnection = new SqlConnection();
-        //var string_conexion = "Data Source=.\\SQLEXPRESS;Initial Catalog=BugTracker;Integrated Security=true;";
+        //var string_conexion = "Data Source=maquis;Initial Catalog=BugTracker_78576;User ID=avisuales1;Password=Pav1#2020Maquis;";
         string dataBaseName = ConfigurationManager.AppSettings["dataBaseName"];
         string string_conexion = ConfigurationManager.ConnectionStrings[dataBaseName].ConnectionString;
         dbConnection.ConnectionString = string_conexion;
