@@ -1,0 +1,3 @@
+﻿namespace BugTracker.GUILayer.Reports
+{
+}
