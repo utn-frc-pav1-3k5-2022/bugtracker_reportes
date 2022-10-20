@@ -20,8 +20,8 @@ namespace BugTracker.GUILayer.Reports
 
         private void frmBugReport_Load(object sender, EventArgs e)
         {
-            this.rpvBugs.LocalReport.ReportEmbeddedResource = "BugTracker.GUILayer.Reports.DSReporte.xsd";
             this.rpvBugs.RefreshReport();
+
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)

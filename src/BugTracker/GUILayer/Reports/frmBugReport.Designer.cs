@@ -47,59 +47,52 @@
             this.groupBox1.Controls.Add(this.btnGenerar);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(934, 76);
+            this.groupBox1.Size = new System.Drawing.Size(801, 66);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // txtFechaHasta
             // 
-            this.txtFechaHasta.Location = new System.Drawing.Point(413, 22);
-            this.txtFechaHasta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFechaHasta.Location = new System.Drawing.Point(354, 19);
             this.txtFechaHasta.Mask = "00/00/0000";
             this.txtFechaHasta.Name = "txtFechaHasta";
-            this.txtFechaHasta.Size = new System.Drawing.Size(210, 23);
+            this.txtFechaHasta.Size = new System.Drawing.Size(181, 20);
             this.txtFechaHasta.TabIndex = 17;
             this.txtFechaHasta.ValidatingType = typeof(System.DateTime);
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(329, 26);
-            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label4.Location = new System.Drawing.Point(282, 23);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(74, 15);
+            this.Label4.Size = new System.Drawing.Size(71, 13);
             this.Label4.TabIndex = 16;
             this.Label4.Text = "Fecha Hasta:";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(10, 26);
-            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label3.Location = new System.Drawing.Point(9, 23);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(75, 15);
+            this.Label3.Size = new System.Drawing.Size(72, 13);
             this.Label3.TabIndex = 15;
             this.Label3.Text = "Fecha desde:";
             // 
             // txtFechaDesde
             // 
-            this.txtFechaDesde.Location = new System.Drawing.Point(94, 22);
-            this.txtFechaDesde.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFechaDesde.Location = new System.Drawing.Point(81, 19);
             this.txtFechaDesde.Mask = "00/00/0000";
             this.txtFechaDesde.Name = "txtFechaDesde";
-            this.txtFechaDesde.Size = new System.Drawing.Size(210, 23);
+            this.txtFechaDesde.Size = new System.Drawing.Size(181, 20);
             this.txtFechaDesde.TabIndex = 14;
             this.txtFechaDesde.ValidatingType = typeof(System.DateTime);
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(679, 22);
-            this.btnGenerar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerar.Location = new System.Drawing.Point(582, 19);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(88, 26);
+            this.btnGenerar.Size = new System.Drawing.Size(75, 23);
             this.btnGenerar.TabIndex = 2;
             this.btnGenerar.Text = "Generar";
             this.btnGenerar.UseVisualStyleBackColor = true;
@@ -107,21 +100,20 @@
             // 
             // rpvBugs
             // 
-            this.rpvBugs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpvBugs.Location = new System.Drawing.Point(0, 76);
-            this.rpvBugs.Name = "ReportViewer";
+            this.rpvBugs.LocalReport.ReportEmbeddedResource = "BugTracker.GUILayer.Reports.rpt_bugs.rdlc";
+            this.rpvBugs.Location = new System.Drawing.Point(12, 73);
+            this.rpvBugs.Name = "rpvBugs";
             this.rpvBugs.ServerReport.BearerToken = null;
-            this.rpvBugs.Size = new System.Drawing.Size(934, 443);
-            this.rpvBugs.TabIndex = 0;
+            this.rpvBugs.Size = new System.Drawing.Size(777, 292);
+            this.rpvBugs.TabIndex = 2;
             // 
             // frmBugReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 519);
+            this.ClientSize = new System.Drawing.Size(801, 450);
             this.Controls.Add(this.rpvBugs);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBugReport";
             this.Text = "frmBugReport";
             this.Load += new System.EventHandler(this.frmBugReport_Load);
@@ -138,7 +130,6 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.MaskedTextBox txtFechaDesde;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Microsoft.Reporting.WinForms.ReportViewer rpvBugs;
     }
 }
